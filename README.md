@@ -11,3 +11,12 @@ P3 ¿Y ahora ves algún cambio en el repositorio remoto? ¿Por qué?
 No se ha efectuado ningún debido a que existe un conflicto en GitHub, necesario bajar los cambio efectuados en el repositorio
 remoto antes de subir los del repositorio local.
 
+P4 ¿Qué significa “Confirmar todo” y cuál sería el comando git equivalente?
+Significa guardar los cambios en la sección Stage, su equivalente sería "git commit -a ...."
+
+P5 ¿Qué significa “Confirmar todo e insertar” y cuál sería el comando git
+equivalente?
+Significa publicar mis cambios en GitHub, su equivalente sería "git commit -a...." "git push -u ......"
+
+P6 ¿Qué significa “Confirmar todo y sincronizar” cuál sería el comando git equivalente?
+Significa enviar tus cambios pendientes y recuperar los cambios de los demás programadores, su equivalenia sería "git commit -a ...." "git push -u ....".
