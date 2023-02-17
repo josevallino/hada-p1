@@ -11,7 +11,7 @@ namespace hada_p1
     /// </summary>
     class HadaP1
     {
-        // Método que convierte de segundos a minutos a partir de un double dado
+        // Método que convierte de segundos a minutos a partir de un double dado como argumento
         public static double Seconds2Minutes(double s)
         {
             if (s == 0)
@@ -20,7 +20,7 @@ namespace hada_p1
             }
             return s / 60;
         }
-        // Método que convierte de minutos a segundos a partir de un double dado
+        // Método que convierte de minutos a segundos a partir de un double dado como argumento
         public static double Minutes2Seconds(double m)
         {
             return m * 60;
