@@ -10,27 +10,39 @@ namespace hada_p1
     {
         static void Main(string[] args)
         {
-            string result;
+            char continuar;
+            double conversion;
             do
             {
-                Console.WriteLine("¿De qué unidad partes? ¿Minutos o segundos? (m o s): ");
-                string tipe = Console.ReadLine();
-                Console.WriteLine("Dime el número a convertir: ");
-                double variable = double.Parse(Console.ReadLine());
+                // solicita la unidad a partir de la cual hacer la conversion
+                Console.WriteLine("Unidad (Horas [h] / minutos [m] / segundos [s]): ");
+                char unidad = char.Parse(Console.ReadLine());
+                Console.WriteLine("Cantidad: ");
+                double cantidad = double.Parse(Console.ReadLine());
 
-                if (tipe.Equals("m"))
+                if (unidad == 'h')
                 {
-                    Console.WriteLine(HadaP1.Minutes2Seconds(variable) + " segundos.");
+                    conversion = HadaP1.Hours2Minutes(cantidad);
+                    Console.WriteLine(cantidad + " horas son " + conversion + " minutos");
                 }
                 else
                 {
-                    Console.WriteLine(HadaP1.Seconds2Minutes(variable) + " minutos.");
+                    // Dependiendo de la unidad introducida y la catidad se realiza la conversion deseada
+                    if (unidad == 'm')
+                    {
+                        conversion = HadaP1.Minutes2Seconds(cantidad);
+                        Console.WriteLine(cantidad + " minutos son " + conversion + " segundos");
+                    }
+                    else
+                    {
+                        conversion = HadaP1.Seconds2Minutes(cantidad);
+                        Console.WriteLine(cantidad + " segundos son " + conversion + " minutos");
+                    }
                 }
 
-                Console.WriteLine("¿Desea continuar haciendo conversiones? (sí o no): ");
-                result = Console.ReadLine();
-            }
-            while (result.Equals("sí"));
+                Console.WriteLine("¿Realizar más conversiones? (s/n): ");
+                continuar = char.Parse(Console.ReadLine());
+            } while (continuar != 'n');
         }
     }
 }
