@@ -20,3 +20,11 @@ Significa publicar mis cambios en GitHub, su equivalente sería "git commit -a..
 
 P6 ¿Qué significa “Confirmar todo y sincronizar” cuál sería el comando git equivalente?
 Significa enviar tus cambios pendientes y recuperar los cambios de los demás programadores, su equivalenia sería "git commit -a ...." "git push -u ....".
+
+P7 ¿Cuál es la diferencia entre pulsar Sincronizar o Extraer? ¿Cuáles serían los
+comandos git equivalentes?
+Extraer es obtener los cambios del remoto a nuestro local mediante "git pull -u .....", sincronizar, sin embargo, significa tener actualizada la rama 
+y su equivalencia es "git commit -a ...." "git push -u ...."
+
+
+  
